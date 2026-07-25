@@ -14,16 +14,16 @@ export default function Typograpy({children, variant, isBold, isUnderline, isSpa
     let variatedStyles = `${style} ${isBold && "font-bold"} ${isUnderline && "underline"} ${isSpacer && "pb-5"}`
 
     if (variant === "h1"){
-        return <h1 className={`${variatedStyles} text-4xl`}>{children}</h1>
+        return <h1 className={`${variatedStyles} text-3xl sm:text-4xl`}>{children}</h1>
     }
     else if(variant == "h2"){
-        return <h2 className={`${variatedStyles} text-3xl`}>{children}</h2>
+        return <h2 className={`${variatedStyles} text-2xl sm:text-3xl`}>{children}</h2>
     }
     else if(variant == "h3") {
-        return <h3 className={`${variatedStyles} text-2xl`}>{children}</h3>
+        return <h3 className={`${variatedStyles} text-xl sm:text-2xl`}>{children}</h3>
     }
     else if(variant == "h4"){
-        return <h4 className={`${variatedStyles} text-xl`}>{children}</h4>
+        return <h4 className={`${variatedStyles} text-lg sm:text-xl`}>{children}</h4>
     }
 
     else if(variant == "sub"){
